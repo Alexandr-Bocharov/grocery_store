@@ -7,7 +7,7 @@ load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = "django-insecure-jbc0ld(+crl5lw$=nnm9=n_+slov8+dzn%wbe@##6chj%+37qb"
+SECRET_KEY = os.getenv("SECRET_KEY")
 
 DEBUG = True
 
@@ -22,6 +22,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
 
     "products",
+    "users",
     "rest_framework_simplejwt",
 
 ]
@@ -117,3 +118,5 @@ REST_FRAMEWORK = {
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     )
 }
+
+AUTH_USER_MODEL = "users.User"
