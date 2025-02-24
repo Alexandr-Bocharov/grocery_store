@@ -1,3 +1,6 @@
+*.jpg
+*.png
+
 celerybeat-schedule.db
 django.db
 dump.rdb
