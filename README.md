@@ -38,6 +38,6 @@
 
 ### Команда разработки  
 - Бочаров Александр  
-email: counter23062001@mail.ru
+email: counter23062001@mail.ru  
 tg: https://t.me/tanj_incognito
 
